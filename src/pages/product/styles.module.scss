@@ -1,0 +1,86 @@
+.productPage {
+    height: calc(100vh - 132px);
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    
+    .container {
+        height: calc(100% - 5rem);
+        width: 100%;
+        max-width: 1168px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        figure {
+            height: 100%;
+            max-width: 576px;
+            padding: 0.25rem;
+            background: linear-gradient(
+                180deg, #1ea483 0%, #7465d4 100% 
+            );
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            border-radius: 8px;
+            
+            img {
+                object-fit: cover;
+            }
+        }
+        
+        .productInfo {
+            height: 100%;
+            max-width: 525px;
+            display: flex;
+            flex-direction: column;
+            
+            strong {
+                font-size: 2rem;
+                color: var(--gray-200);
+                
+                margin-bottom: 1rem;
+            }
+            
+            span {
+                font-size: 3rem;
+                color: var(--green-400);
+                margin-bottom: 1.25rem;
+            }
+            
+            p {
+                font-size: 1.25rem;
+                color: var(--gray-200);
+            }
+            
+            button[type="button"] {
+                margin-top: auto;
+                
+                height: 5rem;
+                background-color: var(--green-400);
+                
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--white);
+                
+                border: 2px solid transparent;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s, border-color 0.3s;
+                
+                &:hover {
+                    background-color: var(--green-300);
+                }
+                
+                &:focus {
+                    outline: none;
+                    background-color: var(--green-300);
+                    border-color: var(--gray-200);
+                }
+            }
+        }
+    }
+}
